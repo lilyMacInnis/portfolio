@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Simple Portfolio Website">
+    <meta name="author" content="Lily MacInnis">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../simple_project.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Lily MacInnis Website</title>
+</head>
+
+<body>
+    <div id=app>
+        <a href="javascript:void(0);" class="icon" onclick="dropDown()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <div id="header">
+            <nav>
+                <ul>
+                    <li>
+                        <button>
+                            <a href="./index.html">
+                                Home
+                            </a>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="active">
+                            <a href="projects.html" class="active">
+                                Projects
+                            </a>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <main>
+            <ul>
+                <li>
+                    <div id="projects">
+                        <a href="#">
+                            <h2>
+                                Title
+                            </h2>
+                        </a>
+                        <ul id="projectDescriptors">
+                            <li>
+                                I don't have any projects yet so this is just a template.
+                            </li>
+                            <li>
+                                This is where another descriptor of the project would go.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div id="projects">
+                        <a href="#">
+                            <h2>
+                                Title-2
+                            </h2>
+                        </a>
+                        <ul id="projectDescriptors">
+                            <li>
+                                This is an example of a second project.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </main>
+
+    </div>
+</body>
