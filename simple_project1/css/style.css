@@ -1,0 +1,202 @@
+@font-face{
+    font-family: 'myFont';
+    src: url('../Wire_One/WireOne-Regular.ttf');
+}
+
+body{
+    font-family: myFont, tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-style: normal;
+    background-image: linear-gradient(45deg, #0d073f, #140a4b, #601cac, #a549e1);
+}
+
+#app{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a.icon{
+    display: none;
+}
+
+#header{
+    display:block;
+}
+
+nav{
+    background-image: linear-gradient(to right, #fff, #e7e6f0);
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+}
+
+nav li{
+    margin: 0;
+}
+
+nav button{
+    margin: 0.6em;
+    padding: 0;
+    border: none;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+nav button:hover{
+    background-color: #e7e6f0;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 1.25em;
+    color: #601cac;
+    padding: 0.4em;
+    display: block;
+}
+
+nav a:hover{
+    color: #a549e1;
+}
+
+button.active{
+    background-color: #e7e6f0;
+}
+
+a.active{
+    color: #a549e1;
+}
+
+main{
+    
+    padding: 0;
+}
+
+#home{
+    margin-left: 6vw;
+    margin-top: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 6em;
+}
+
+#home h1{
+    font-size: 6.5vw;
+    font-weight: light;
+}
+
+#home p{
+    font-size: 3vw;
+    color: #c9b4dd;
+    margin-right: 6em;
+}
+
+#home a{
+    font-size: 2vw;
+    color: #c9b4dd;
+    display: block;
+}
+
+#home a:hover{
+    color: #cb88f3;
+}
+
+#home #email{
+    font-size: 2vw;
+    color: #c9b4dd;
+    margin: 0;
+    padding: 0;
+}
+
+main ul{
+    list-style-type: none;
+}
+
+#projects{
+    background-image: linear-gradient(to right, #fff, #e7e6f0);
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    margin: 6vw;
+    margin-right: 10vw;
+    padding: 0;
+}
+
+#projects h2{
+    color: #0d073f;
+    padding: 0;
+    margin: 0.25em;
+    font-size: 4em;
+}
+
+#projects h2:hover{
+    color: #a549e1;
+}
+
+#projects #projectDescriptors{
+    color: #601cac;
+    font-size: 2em;
+    list-style-type: disc;
+    margin-left: 2em;
+    
+}
+
+#projects #projectDescriptors li{
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width: 600px) {
+    #header{
+        display: none;
+    }
+
+    nav ul{
+        display: block;
+    }
+
+    a.icon{
+        color: white;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    a.icon:focus{
+        color: #601cac;
+    }
+
+    #home h1{
+        font-size: 0.6em;
+    }
+
+    #home p{
+        font-size: 0.35em;
+        margin-right: 0.25em;
+    }
+
+    #home a{
+        font-size: 0.25em;
+    }
+
+    #home #email{
+        font-size: 0.25em;
+        margin-bottom: 1em;
+    }
+
+    #projects{
+        background-color: #fff;
+        margin-left:0.5em;
+    }
+    #projects #projectDescriptors{
+
+        margin-right: 4vw;
+        margin-left: 0.5em;
+    }
+}
